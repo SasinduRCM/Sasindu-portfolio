@@ -16,3 +16,10 @@ navLink.forEach((link) => {
     nav.classList.remove("show");
   });
 });
+
+  var typed = new Typed(".type", {
+    strings: ["Programmer.", "Web Developer.", "Front-End Developer.","Back-End Developer.","Freelancer"],
+    typeSpeed: 60,
+    backSpeed: 60,
+    loop: true,
+  });
