@@ -336,7 +336,7 @@ header .mobile-nav {
 
 .project .container .content .projects {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   align-items: center;
   justify-content: center;
   gap: 20px;
@@ -347,7 +347,7 @@ header .mobile-nav {
   padding: 16px;
   border: 2px solid #fff;
   border-radius: 12px;
-  height: 450px;
+  height: 700px;
 }
 
 .project .container .content .projects .card img {
@@ -364,7 +364,7 @@ header .mobile-nav {
 
 .project .container .content .projects .card .description h1 {
   font-weight: bold;
-  font-size: 28px;
+  font-size: 24px;
 }
 
 .project .container .content .projects .card .description p {
@@ -379,6 +379,7 @@ header .mobile-nav {
   justify-content: space-between;
   align-items: center;
   margin-top: 12px;
+
 }
 
 .project .container .content .projects .card .description .action button {
@@ -391,7 +392,7 @@ header .mobile-nav {
   border-radius: 12px;
   background: transparent;
   color: #fff;
-  width: 25%;
+  width: 45%;
   transition: 0.3s linear;
 }
 
@@ -606,6 +607,7 @@ footer .container .link-container .navigation ul li a {
   footer .container .link-container {
     gap: 2rem;
   }
+
 }
 
 @media screen and (max-width: 1024px) {
@@ -699,6 +701,7 @@ footer .container .link-container .navigation ul li a {
 }
 
 @media screen and (max-width: 768px) {
+
   header .mobile-nav ul li {
     width: 35%;
   }
@@ -744,4 +747,516 @@ footer .container .link-container .navigation ul li a {
   footer .container .link-container .navigation {
     width: 50%;
   }
+}
+
+@media screen and (max-width: 1536px) {  /* Styles for larger desktops */
+ 
+  .hero .container .content h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 48px;
+    width: 65%;
+  }
+
+  .hero .container .content svg {
+    margin-bottom: -9rem;
+  }
+
+  .about .container .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+  }
+  
+  .about .container .content .about-me {
+    display: flex;
+    gap: 12px;
+  }
+
+  .project .container .content .projects {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width:85%;
+  }
+  .skill .container .content .skills {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1024px) {   /* Styles for tablets */
+
+  .hero .container .content h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 42px;
+    width: 65%;
+  }
+  .hero .container .content svg {
+    margin-bottom: -8.6rem;
+  }
+
+  .about .container .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+  }
+
+  .about .container .content .about-me {
+    display:block;
+    gap: 10px;
+  }
+
+  .about .container .content .about-me .profile {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about .container .content .about-me .description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .about .container .content .about-me .profile .image-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    background-color: #191919;
+    border-radius: 16px;
+    width: 75%;
+    height: 25vh;
+    gap: 20px;
+  }
+  
+  .about .container .content .about-me .description .name-role {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .about .container .content .about-me .description .name-role h1 {
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
+  
+  .about .container .content .about-me .description .name-role .role {
+    width: 100%;
+    display: flex;
+  }
+  
+  .about .container .content .about-me .description .name-role .role h2 {
+    font-weight: 500;
+    font-size: 2rem;
+    padding: 4px 6px;
+    background-color: #fff;
+    border-radius: 8px;
+    color: #000;
+  }
+  
+  .about .container .content .about-me .description p {
+    font-size: 1.5rem;
+    text-align: justify;
+  }
+
+  .skill .container .content .skills .skill-box {
+    padding: 4px;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    filter: grayscale(100);
+    transition: all 0.2s linear;
+  }
+
+  .project .container .content .projects {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 90%;
+  }
+  .skill .container .content .skills {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 50%;
+  }
+
+  .project .container .content .projects .card {
+    padding: 16px;
+    border: 2px solid #fff;
+    border-radius: 12px;
+    height: 680px;
+  }
+  
+
+  .project .container .content .projects .card img {
+    width: 100%;
+    height: 45%;
+  }
+  
+  .project .container .content .projects .card .description {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: 50%;
+  }
+  
+  .project .container .content .projects .card .description h1 {
+    font-weight: bold;
+    font-size: 21px;
+  }
+  
+  .project .container .content .projects .card .description p {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+  }
+  
+  .project .container .content .projects .card .description .action {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+  
+  }
+
+  .contact .container .content .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 15px;
+    width: 100%;
+    border: 4px solid #fff;
+    border-radius: 20px;
+  }
+
+  .contact .container .content .contact-form .input input {
+    width: 69%;
+    padding: 12px;
+    background: transparent;
+    border: 3px solid #fff;
+    border-radius: 8px;
+    color: #fff;
+  }
+  
+}
+
+@media screen and (max-width: 768px) {    /* Styles for mobile phones in landscape */
+
+  .hero .container .content h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 36px;
+    width: 65%;
+  }
+
+  .hero .container .content svg {
+    margin-bottom: -8.3rem;
+  }
+
+  .about .container .content {
+    align-items: center;
+    gap: 64px;
+  }
+
+  .about .container .content .about-me {
+    gap: 8px;
+  }
+
+  .about .container .content .about-me .description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .about .container .content .about-me .profile .image-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    background-color: #191919;
+    border-radius: 16px;
+    width: 75%;
+    height: 25vh;
+    gap: 20px;
+  }
+  
+  .about .container .content .about-me .description .name-role {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .about .container .content .about-me .description .name-role h1 {
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
+  
+  .about .container .content .about-me .description .name-role .role {
+    width: 100%;
+    display: flex;
+  }
+  
+  .about .container .content .about-me .description .name-role .role h2 {
+    font-weight: 500;
+    font-size: 1.3rem;
+    padding: 4px 6px;
+    background-color: #fff;
+    border-radius: 8px;
+    color: #000;
+  }
+  
+  .about .container .content .about-me .description p {
+    font-size: 1.1rem;
+    text-align: justify;
+  }
+  
+  .skill .container .content .skills .skill-box {
+    padding: 4px;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    filter: grayscale(100);
+    transition: all 0.2s linear;
+  }
+
+  .project .container .content .projects {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 85%;
+  }
+  .skill .container .content .skills {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 50%;
+  }
+
+  .project .container .content .projects .card {
+    padding: 16px;
+    border: 2px solid #fff;
+    border-radius: 12px;
+    height: 650px;
+  }
+
+  .project .container .content .projects .card img {
+    width: 100%;
+    height: 40%;
+  }
+  
+  .project .container .content .projects .card .description {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: 50%;
+  }
+  
+  .project .container .content .projects .card .description h1 {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .project .container .content .projects .card .description p {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+  }
+  
+  .project .container .content .projects .card .description .action {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+  
+  }
+
+  .contact .container .content .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+    border: 4px solid #fff;
+    border-radius: 20px;
+  }
+
+  .contact .container .content .contact-form .input input {
+    width: 89%;
+    padding: 12px;
+    background: transparent;
+    border: 3px solid #fff;
+    border-radius: 8px;
+    color: #fff;
+  }
+  
+}
+
+@media screen and (max-width: 610px) {    /* Optional: Adjustments for small tablets or large phones */
+  
+  .hero .container .content h1 {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 500;
+    line-height: 30px;
+    width: 65%;
+  }
+
+  .hero .container .content svg {
+    margin-bottom: -8rem;
+  }
+
+  .about .container .content {
+    align-items: center;
+    gap: 64px;
+  }
+
+  .about .container .content .about-me {
+    gap: 6px;
+  }
+
+  .about .container .content .about-me .description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .about .container .content .about-me .profile .image-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    background-color: #191919;
+    border-radius: 16px;
+    width: 75%;
+    height: 25vh;
+    gap: 20px;
+  }
+  
+  .about .container .content .about-me .description .name-role {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .about .container .content .about-me .description .name-role h1 {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .about .container .content .about-me .description .name-role .role {
+    width: 100%;
+    display: flex;
+  }
+  
+  .about .container .content .about-me .description .name-role .role h2 {
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 4px 6px;
+    background-color: #fff;
+    border-radius: 8px;
+    color: #000;
+  }
+  
+  .about .container .content .about-me .description p {
+    font-size: 0.8rem;
+    text-align: justify;
+  }
+
+  .project .container .content .projects .card {
+    padding: 16px;
+    border: 2px solid #fff;
+    border-radius: 12px;
+    height: 600px;
+  }
+
+  .project .container .content .projects .card img {
+    width: 100%;
+    height: 35%;
+  }
+  
+  .project .container .content .projects .card .description {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: 50%;
+  }
+  
+  .project .container .content .projects .card .description h1 {
+    font-weight: bold;
+    font-size: 15px;
+  }
+  
+  .project .container .content .projects .card .description p {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+  }
+  
+  .project .container .content .projects .card .description .action {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+  
+  }
+
+  .contact .container .content .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 5px;
+    width: 100%;
+    border: 4px solid #fff;
+    border-radius: 20px;
+  }
+
+  .contact .container .content .contact-form .input input {
+    width: 99%;
+    padding: 12px;
+    background: transparent;
+    border: 3px solid #fff;
+    border-radius: 8px;
+    color: #fff;
+  }
+  
+}
+
+@media screen and (max-width: 450px) {    /* Optional: Adjustments for small phones */
+
 }
